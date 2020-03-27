@@ -12,8 +12,11 @@
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
         "guzzlehttp/guzzle": "^6.3",
+        "joshbrw/laravel-module-installer": "^0.1.4",
         "laravel/framework": "^7.0",
-        "laravel/tinker": "^2.0"
+        "laravel/tinker": "^2.0",
+        "nwidart/laravel-modules": "^7.0",
+        "callmez/core-module": "dev-master"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
@@ -30,7 +33,8 @@
     "extra": {
         "laravel": {
             "dont-discover": []
-        }
+        },
+        "module-dir": "modules"
     },
     "autoload": {
         "psr-4": {
