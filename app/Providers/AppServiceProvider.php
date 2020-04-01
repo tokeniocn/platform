@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Schema;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,7 +14,16 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        // Sets third party service providers that are only needed on local/testing environments
+        if ($this->app->environment() !== 'production') {
+            /**
+             * Loader for registering facades.
+             */
+            $loader = \Illuminate\Foundation\AliasLoader::getInstance();
+
+            // Load third party local aliases
+            $loader->alias('Debugbar', \Barryvdh\Debugbar\Facade::class);
+        }
     }
 
     /**
@@ -23,6 +33,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Schema::defaultStringLength(191);
     }
 }

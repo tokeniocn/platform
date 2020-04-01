@@ -1,9 +1,11 @@
 /node_modules
 /public/hot
 /public/storage
-/public/images
 /public/vendor
-/public/build
+/public/js
+/public/css
+/public/images
+/public/fonts
 /public/mix-manifest.json
 /storage/*.key
 /storage/api-docs
