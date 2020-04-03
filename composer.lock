@@ -196,12 +196,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/callmez/core-module.git",
-                "reference": "0c7f06028721e9fc63f30856701fcd5d9e53bc08"
+                "reference": "604a4bd8c7dae3fa32a753cdfc2605d2baacbd05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/callmez/core-module/zipball/0c7f06028721e9fc63f30856701fcd5d9e53bc08",
-                "reference": "0c7f06028721e9fc63f30856701fcd5d9e53bc08",
+                "url": "https://api.github.com/repos/callmez/core-module/zipball/604a4bd8c7dae3fa32a753cdfc2605d2baacbd05",
+                "reference": "604a4bd8c7dae3fa32a753cdfc2605d2baacbd05",
                 "shasum": ""
             },
             "require": {
@@ -233,7 +233,9 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Modules\\Core\\": "src/"
+                    "Modules\\Core\\": "src/",
+                    "Modules\\Core\\Seeds\\": "database/seeds/",
+                    "Modules\\Core\\Factories\\": "database/factories/"
                 },
                 "files": [
                     "src/helpers.php"
@@ -246,7 +248,7 @@
                     "email": "callme-z@qq.com"
                 }
             ],
-            "time": "2020-04-03T07:59:37+00:00"
+            "time": "2020-04-03T16:45:53+00:00"
         },
         {
             "name": "divineomega/do-file-cache",
