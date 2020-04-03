@@ -196,12 +196,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/callmez/core-module.git",
-                "reference": "5a8dc2e7d3545379fc0958dd194c490da2ed444b"
+                "reference": "0c7f06028721e9fc63f30856701fcd5d9e53bc08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/callmez/core-module/zipball/5a8dc2e7d3545379fc0958dd194c490da2ed444b",
-                "reference": "5a8dc2e7d3545379fc0958dd194c490da2ed444b",
+                "url": "https://api.github.com/repos/callmez/core-module/zipball/0c7f06028721e9fc63f30856701fcd5d9e53bc08",
+                "reference": "0c7f06028721e9fc63f30856701fcd5d9e53bc08",
                 "shasum": ""
             },
             "require": {
@@ -236,7 +236,7 @@
                     "Modules\\Core\\": "src/"
                 },
                 "files": [
-                    "src/global.php"
+                    "src/helpers.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -246,7 +246,7 @@
                     "email": "callme-z@qq.com"
                 }
             ],
-            "time": "2020-04-02T18:11:10+00:00"
+            "time": "2020-04-03T07:59:37+00:00"
         },
         {
             "name": "divineomega/do-file-cache",
