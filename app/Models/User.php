@@ -1,8 +1,8 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
-use Modules\Core\Models\Auth\User as BaseUser;
+use Modules\Core\Models\Auth\BaseUser;
 
 class User extends BaseUser
 {

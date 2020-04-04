@@ -1,10 +1,10 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
-use Modules\Core\Models\Admin\AdminUser as BaseUser;
+use Modules\Core\Models\Admin\BaseAdminUser;
 
-class AdminUser extends BaseUser
+class AdminUser extends BaseAdminUser
 {
 
 }
