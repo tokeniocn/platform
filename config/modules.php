@@ -26,7 +26,7 @@ return [
 
     'stubs' => [
         'enabled' => true,
-        'path' => resource_path('stubs/module'),
+        'path' => base_path('modules/Core/resources/stubs/module'),
         'files' => [
             'routes/web' => 'Routes/web.php',
             'routes/api' => 'Routes/api.php',
