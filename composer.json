@@ -17,7 +17,7 @@
         "laravel/socialite": "^4.1",
         "laravel/sanctum": "^2.0",
         "nwidart/laravel-modules": "^7.0",
-        "callmez/core-module": "dev-master"
+        "tokeniocn/core-module": "dev-master"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.2",
