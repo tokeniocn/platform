@@ -138,7 +138,7 @@ return [
     */
 
     'scan' => [
-        'enabled' => false,
+        'enabled' => true,
         'paths' => [
             base_path('vendor/*/*'),
         ],
@@ -155,8 +155,8 @@ return [
     'composer' => [
         'vendor' => 'nwidart',
         'author' => [
-            'name' => 'Nicolas Widart',
-            'email' => 'n.widart@gmail.com',
+            'name' => 'CallMeZ',
+            'email' => 'callme-z@qq.com',
         ],
     ],
     /*
@@ -168,7 +168,7 @@ return [
     |
     */
     'cache' => [
-        'enabled' => false,
+        'enabled' => ! (bool) env('APP_DEBUG', false),
         'key' => 'laravel-modules',
         'lifetime' => 60,
     ],
