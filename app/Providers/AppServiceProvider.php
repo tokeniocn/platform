@@ -24,6 +24,16 @@ class AppServiceProvider extends ServiceProvider
             // Load third party local aliases
             $loader->alias('Debugbar', \Barryvdh\Debugbar\Facade::class);
         }
+
+        // 开启sql日志监控,  `tail -f storage/logs/laravel.sql`可实时观察sql
+        if (env('LOG_QUERY', false)) {
+            \DB::listen(function($query) {
+                $tmp = str_replace('?', '"'.'%s'.'"', $query->sql);
+                $tmp = vsprintf($tmp, $query->bindings);
+                $tmp = str_replace("\\","",$tmp);
+                \Log::debug(' execution time: '.$query->time.'ms; '.$tmp."\n\n\t");
+            });
+        }
     }
 
     /**
